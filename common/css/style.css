@@ -4,7 +4,6 @@
     主たるブレイクポイント
     (768px以下)がsp、tab
     769px以上がPC
-    1000px以上がpc2
 ========================================================= */
 
 /* =========================================================
@@ -24,6 +23,10 @@ body{
   background-color: #fff;
 }
 
+a:hover{
+  opacity: 0.6;
+}
+
 .inner{
   max-width: 1000px;
   margin-right: auto;
@@ -31,16 +34,68 @@ body{
 }
 
 .title {
-  font-size: 2.6rem;
+  font-size: 4.6rem;
   line-height: 1;
   margin-bottom: 30px;
   font-weight: bold;
 }
 
+.subtitle{
+  font-size: 2.6rem;
+  margin-bottom: 30px;
+}
+
+i{
+  padding-right: 10px;
+}
+
 /* ヘッダー
 --------------------------------------------------------- */
+header {
+  position: fixed;
+  top: 0;
+  background-color: #043959;
+  color: #fff;
+  height: 50px;
+  width: 100%;
+}
 
+header > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+header nav .menu_btn {
+  display: none;
+}
+
+.menu_body {
+  /* background-color: transparent; */
+  height: auto;
+  width: 100%;
+  position: static;
+  transform: translateX(0);
+  padding-top: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.menu_body ul {
+  display: flex;
+}
+
+.menu_body ul li {
+  font-size: 1.6rem;
+  line-height: 3rem;
+  margin-right: 20px;
+}
+
+@media screen and (max-width:769px){
+  header nav .menu_body {
+    display: none;
+  }
+}/* max-width:769px */
 
 /* フッター
 --------------------------------------------------------- */
@@ -59,6 +114,45 @@ footer p{
 
 /* キービジュアル
 --------------------------------------------------------- */
+#key{
+  background-image: url(../img/key.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#key > div{
+  display: table;
+  height: 100vh;
+  width: 100%;
+}
+#key div.pc{
+  display: table-cell;
+  position: absolute;
+  top: 300px;
+  left: 180px;
+  /* text-align: center; */
+  /* vertical-align: middle; */
+  color: #fff;
+  font-size: 6rem;
+  font-weight: bold;
+  font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+  line-height: 1.5;
+}
+
+#key div.pc p{
+  background: rgba(255,255,255,0.2);
+  display: inline-block;
+  padding: 20px;
+}
+
+@media screen and (max-width:769px){
+  #key{
+    margin-top: 0;
+  }
+}/* max-width:769px */
 
 /* ABOUT
 --------------------------------------------------------- */
@@ -66,39 +160,100 @@ footer p{
   margin-bottom: 30px;
 }
 
-
-/* WORK
---------------------------------------------------------- */
-#work{
-  margin-bottom: 30px;
+#about .icon{
+  width: 50px;
+  height: 50px;
+}
+#about ul {
+  margin-bottom: 20px;
 }
 
+#about ul li ul{
+  margin-left: 26px;
+}
 
 /* SIKILLS
 --------------------------------------------------------- */
 #skills{
+  background-color: #043959;
+  color: #fff;
   margin-bottom: 30px;
+  padding-top: 30px;
 }
 
+#skills div h2,
+#skills div h3{
+  color: #fff;
+}
 
+#skills img{
+  width: 80px;
+  height: 80px;
+}
 
+#skills div{
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+#skills div div{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#skills div div div{
+  width: 320px;
+  background-color: #fff;
+  color: #000;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+#skills .star{
+  width: 100%;
+}
 /* PORTFOLIO
 --------------------------------------------------------- */
 #portfolio{
   margin-bottom: 30px;
 }
 
+#portfolio div div{
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
 
+#portfolio .pf_contents figure{
+  margin-bottom: 30px;
+}
+
+#portfolio .pf_contents figure img{
+  width: 480px;
+  height: 350px;
+  /* transform-style: flat; */
+  /* transition: all .25s ease-out; */
+  box-shadow: 0 2px 5px #ccc;
+}
+
+#portfolio .icon{
+  width: 50px;
+  height: 50px;
+}
 
 /* CONTACT
 --------------------------------------------------------- */
 #contact{
-  margin-bottom: 30px;
+  background-color: #043959;
+  color: #fff;
 }
 
-
-
-
-
-
-
+#contact > div{
+  padding: 30px;
+}
+#contact div h2{
+  color: #fff;
+}

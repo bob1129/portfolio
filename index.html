@@ -2,12 +2,30 @@
 <html lang="ja">
 
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TKNDDPB');</script>
+  <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>portfolio</title>
+  <meta name="description" content="ポートフォリオ">
+  <meta property="og:url" content="https://toyokazu-mori.com/portfolio/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ポートフォリオ">
+  <meta property="og:description" content="ポートフォリオ">
+  <meta property="og:site_name" content="ポートフォリオ">
+  <meta property="og:image" content="https://toyokazu-mori.com/portfolio/common/img/key.jpg">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/css/uikit.min.css">
   <link rel="stylesheet" href="common/css/reset.css">
   <link rel="stylesheet" href="common/css/style.css">
+  <script src="https://kit.fontawesome.com/dbae26921f.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit-icons.min.js"></script>
@@ -15,29 +33,84 @@
 </head>
 
 <body id="top">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKNDDPB" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <!-- HEADER -->
   <header>
     <div class="inner">
-
-
+      <div>
+        <span></span>
+      </div>
+      <nav>
+        <div class="menu_btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu_body">
+          <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#portfolio">PORTFOLIO</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </nav>
     </div>
   </header>
+
+  <!-- キービジュアル -->
+  <div id="key">
+    <div class="inner">
+      <div class="pc">
+        <P>PORTFOLIO</P>
+      </div>
+    </div>
+  </div>
 
   <!-- ABOUT -->
   <section id="about">
     <div class="inner">
       <h2 class="title">ABOUT</h2>
-      <a href="" class="uk-icon-hover uk-icon-github"></a>
-      <hr>
-    </div>
-  </section>
 
-  <!-- WORK -->
-  <section id="work">
-    <div class="inner">
-      <h2 class="title">WORK</h2>
-      <hr>
+      <ul>
+        <li>
+          <i class="fas fa-paperclip"></i>名前：Toyokazu Mori
+        </li>
+        <li>
+          <i class="fas fa-paperclip"></i>出身：兵庫県
+        </li>
+        <li>
+          <i class="fas fa-paperclip"></i>経歴：
+        </li>
+        <li>
+          <ul>
+            <li>
+              2002年4月〜 独立系ソフトウェアハウスにて、金融機関に向けたさまざまな業務システムの開発プロジェクトに携わってきました。
+            </li>
+            <li>
+              例：信託銀行向け貸株システム、債券レポ取引システム、海外為替システム、外国証券決済管理システム 等
+            </li>
+            <li>
+              2020年5月〜 インタープランITスクールにてweb制作を学ぶ
+            </li>
+          </ul>
+        </li>
+        <li>
+          <i class="fas fa-paperclip"></i>資格：
+          <ul>
+            <li>2005年3月 Oracle Master Silver Fellow</li>
+            <li>2019年11月 情報セキュリティマネジメント</li>
+            <li>2019年12月 一種証券外務員</li>
+          </ul>
+        </li>
+      </ul>
+      <a href="https://github.com/bob1129" target="_blank">
+        <img class="icon" src="common/img/github.png" alt="GitHub">
+      </a>
     </div>
   </section>
 
@@ -45,8 +118,165 @@
   <section id="skills">
     <div class="inner">
       <h2 class="title">SKILLS</h2>
-
-      <hr>
+      <h3 class="subtitle">フロントエンド</h3>
+      <div class="uk-grid">
+        <div class="uk-width-1-3">
+          <img src="common/img/HTML5.png" alt="html5">
+          <p>HTML5</p>
+          <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="far fa-star"></i><i class="far fa-star"></i>
+          </div>
+          <p><i class="fas fa-paperclip"></i>基本的なデザインが書けます。</p>
+        </div>
+        <div class="uk-width-1-3">
+          <img src="common/img/css3.png" alt="css3">
+          <p>CSS3</p>
+          <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="far fa-star"></i><i class="far fa-star"></i>
+          </div>
+          <p><i class="fas fa-paperclip"></i>基本的なデザインが書けます。</p>
+        </div>
+        <div class="uk-width-1-3">
+          <img src="common/img/js.png" alt="js">
+          <p>JavaScript</p>
+          <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="far fa-star"></i><i class="far fa-star"></i>
+          </div>
+          <p><i class="fas fa-paperclip"></i>現在勉強中</p>
+        </div>
+      </div>
+      <div class="uk-grid">
+        <div class="uk-width-1-3">
+          <img src="common/img/jquery.png" alt="jquery">
+          <p>jQuery</p>
+          <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="far fa-star"></i><i class="far fa-star"></i>
+          </div>
+          <p><i class="fas fa-paperclip"></i>現在勉強中</p>
+        </div>
+      </div>
+      <h3 class="subtitle">バックエンド</h3>
+      <div class="uk-grid">
+        <div class="uk-width-1-3">
+          <img src="common/img/java.png" alt="java">
+          <p>java</p>
+          <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+          </div>
+          <p><i class="fas fa-paperclip"></i>java6<br>フレームワーク：Spring(Eclipse使用)、独自フレームワーク(IBM RAD使用)</p>
+        </div>
+        <div class="uk-width-1-3">
+          <img src="common/img/vb.png" alt="vb">
+          <p>VB.NET</p>
+          <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+          </div>
+          <p><i class="fas fa-paperclip"></i>.NET Framework</p>
+        </div>
+        <div class="uk-width-1-3">
+          <img src="common/img/plsql.png" alt="plsql">
+          <p>PL/SQL</p>
+          <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="far fa-star"></i><i class="far fa-star"></i>
+          </div>
+          <p><i class="fas fa-paperclip"></i>ここに説明文</p>
+        </div>
+        <div class="uk-width-1-3">
+          <img src="common/img/cobol.png" alt="cobol">
+          <p>COBOL</p>
+          <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star"></i><i class="far fa-star"></i>
+          </div>
+          <p><i class="fas fa-paperclip"></i>Micro Focus COBOLにてオープン系システムを開発。</p>
+        </div>
+        <div class="uk-width-1-3">
+          <img src="common/img/php.png" alt="php">
+          <p>PHP</p>
+          <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i
+              class="far fa-star"></i><i class="far fa-star"></i>
+          </div>
+          <p><i class="fas fa-paperclip"></i>現在勉強中</p>
+        </div>
+        <div class="uk-width-1-3">
+          <img src="common/img/wp.png" alt="WordPress">
+          <p>WordPress</p>
+          <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i
+              class="far fa-star"></i><i class="far fa-star"></i>
+          </div>
+          <p><i class="fas fa-paperclip"></i>現在勉強中</p>
+        </div>
+      </div>
+      <h3 class="subtitle">DB</h3>
+      <div class="uk-grid">
+        <div class="uk-width-1-3">
+          <img src="common/img/oracle.png" alt="oracle">
+          <p>oracle</p>
+          <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+          </div>
+          <p><i class="fas fa-paperclip"></i>Oracle 8i、9i、10g、11g</p>
+        </div>
+        <div class="uk-width-1-3">
+          <img src="common/img/sqlserver.png" alt="SQL Server">
+          <p>SQL Server</p>
+          <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="far fa-star"></i><i class="far fa-star"></i>
+          </div>
+          <p><i class="fas fa-paperclip"></i>ここに説明文</p>
+        </div>
+        <div class="uk-width-1-3">
+          <img src="common/img/db2.png" alt="DB2">
+          <p>DB2</p>
+          <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="far fa-star"></i><i class="far fa-star"></i>
+          </div>
+          <p><i class="fas fa-paperclip"></i>ここに説明文</p>
+        </div>
+      </div>
+      <!-- <h3 class="subtitle">other</h3>
+      <div class="uk-grid"> -->
+      <!-- <div class="uk-width-1-3">
+          <p><i class="fas fa-paperclip"></i>TeraTerm</p>
+          <p><i class="fas fa-paperclip"></i>ここに説明文</p>
+          <p><i class="fas fa-paperclip"></i>ここに説明文</p>
+          <p><i class="fas fa-paperclip"></i>ここに説明文</p>
+          <p>aaa</p>
+          <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+          </div>
+          <p><i class="fas fa-paperclip"></i>ここに説明文</p>
+        </div> -->
+      <!-- <div class="uk-width-1-3">
+          <p>bbb</p>
+          <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+          </div>
+          <p><i class="fas fa-paperclip"></i>ここに説明文</p>
+        </div>
+        <div class="uk-width-1-3">
+          <p>ccc</p>
+          <div class="star">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+              class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+          </div>
+          <p><i class="fas fa-paperclip"></i>ここに説明文</p>
+        </div> -->
+      <!-- </div> -->
     </div>
   </section>
 
@@ -54,13 +284,69 @@
   <section id="portfolio">
     <div class="inner">
       <h2 class="title">PORTFOLIO</h2>
-      Web Site
-      <figure><img src="common/img/chalon.png" alt="CHALON"></figure>
-      <figure><img src="common/img/github.png" alt="GitHub"></figure>
-      <figure><img src="common/img/ab.png" alt="AkebonoBridge"></figure>
-      <figure><img src="common/img/github.png" alt="GitHub"></figure>
-      <figure><a href="https://github.com/bob1129/portfolio"><img src="common/img/github.png" alt="GitHub"></a></figure>
-      <hr>
+      <h3 class="subtitle">Web制作</h3>
+      <div class="uk-grid">
+        <div class="pf_contents uk-width-1-2">
+          <a href="https://intp.site/239/chalon/" target="_blank">
+            <figure>
+              <img src="common/img/chalon.png" alt="CHALON">
+            </figure>
+          </a>
+          <p><i class="fas fa-paperclip"></i>スクールの授業で作成</p>
+          <p><i class="fas fa-paperclip"></i>静的サイトをWordPress化しました。</p>
+          <p><i class="fas fa-paperclip"></i>HTML/CSS/jQuery/WordPress</p>
+          <a href="https://github.com/bob1129/chalon" target="_blank">
+            <img class="icon" src="common/img/github.png" alt="GitHub">
+          </a>
+        </div>
+        <div class="pf_contents uk-width-1-2">
+          <a href="https://intp.site/239/akebono/" target="_blank">
+            <figure>
+              <img src="common/img/ab.png" alt="AkebonoBridge">
+            </figure>
+          </a>
+          <p><i class="fas fa-paperclip"></i>架空のカフェを想定して作成しました。</p>
+          <p><i class="fas fa-paperclip"></i>HTML/CSS/jQuery/WordPress</p>
+          <a href="https://github.com/bob1129/AkebonoBridge" target="_blank">
+            <img class="icon" src="common/img/github.png" alt="GitHub">
+          </a>
+        </div>
+      </div>
+      <div class="uk-grid">
+        <div class="pf_contents uk-width-1-2">
+          <a href="#top">
+            <figure>
+              <img src="common/img/portfolio.png" alt="portfolio">
+            </figure>
+          </a>
+          <p><i class="fas fa-paperclip"></i>このポートフォリオサイトです。</p>
+          <p><i class="fas fa-paperclip"></i>ここに説明文</p>
+          <p><i class="fas fa-paperclip"></i>HTML/CSS/PHP(問い合わせフォーム)</p>
+          <a href="https://github.com/bob1129/portfolio/" target="_blank">
+            <img class="icon" src="common/img/github.png" alt="GitHub">
+          </a>
+        </div>
+        <div class="pf_contents uk-width-1-2">
+        </div>
+      </div>
+      <h3 class="subtitle">PHP(Laravel)</h3>
+      <div class="uk-grid">
+        <div class="pf_contents uk-width-1-2">
+          <a href="https://toyokazu-mori.com/laravel-sns/" target="_blank">
+            <figure>
+              <img src="common/img/laravel-sns.png" alt="laravel-sns">
+            </figure>
+          </a>
+          <p><i class="fas fa-paperclip"></i>LaravelとVue.jsを使用しSNS風Webサービスを作成しました。</p>
+          <p><i class="fas fa-paperclip"></i>ここに説明文</p>
+          <p><i class="fas fa-paperclip"></i>PHP(Laravel)/Vue.js/MySQL</p>
+          <a href="https://github.com/bob1129/laravel-sns" target="_blank">
+            <img class="icon" src="common/img/github.png" alt="GitHub">
+          </a>
+        </div>
+        <div class="pf_contents uk-width-1-2">
+        </div>
+      </div>
     </div>
   </section>
 
@@ -69,7 +355,7 @@
     <div class="inner">
       <h2 class="title">CONTACT FORM</h2>
 
-      <form class="uk-form" action="">
+      <form class="uk-form" action="check.php" method="POST">
         <fieldset>
           <div class="uk-form-row">
             <p><label for="name">Your Name</label></p>
@@ -96,8 +382,6 @@
   <!-- FOOTER -->
   <footer>
     <div class="inner">
-
-
       <p><small>Copyright&COPY;Toyokazu Mori. All Rights Reserved.</small></p>
     </div>
   </footer>
