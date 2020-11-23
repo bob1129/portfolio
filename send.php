@@ -40,7 +40,7 @@ mb_language('japanese');
 mb_send_mail($email,$email_title,$mail_body,$mail_from);
 
 //管理人にメール
-$kanri_email = 'abarabob@i.softbank.jp';
+$kanri_email = 'info@toyokazu-mori.com';
 $kanri_title = 'ホームページよりお問い合わせがありました';
 
 $kanri_body = <<<kanri
