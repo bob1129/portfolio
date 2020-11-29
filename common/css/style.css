@@ -152,10 +152,12 @@ header nav .menu_btn {
     padding-left: 32px;
     padding-right: 32px;
     font-weight: bold;
+    display: none;
   }
 
   .on .menu_body {
     transform: translateX(0);
+    display: block;
   }
 
   .menu_body ul {
